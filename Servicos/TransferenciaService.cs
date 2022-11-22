@@ -5,6 +5,11 @@ namespace CBFWebApi.Servicos
     public class TransferenciaService
     {
         private List<Transferencia> _transferencias = new List<Transferencia>();
+
+        public List<Transferencia> All()
+        {
+            return _transferencias.ToList();
+        }
         public bool Create(Transferencia transferencia)
         {
             _transferencias.Add(transferencia);
