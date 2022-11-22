@@ -5,6 +5,12 @@ namespace CBFWebApi.Servicos
     public class TimeServices
     {
         private List<Time> _times = new List<Time>();
+
+        public List<Time> All()
+        {
+            return _times.ToList();
+        }
+
         public bool Create(Time time)
         {
             _times.Add(time);

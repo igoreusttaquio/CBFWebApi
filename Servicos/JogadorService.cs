@@ -5,6 +5,11 @@ namespace CBFWebApi.Servicos
     public class JogadorService
     {
         private List<Jogador> _jogadores = new List<Jogador>();
+
+        public List<Jogador> Jogadores()
+        {
+            return _jogadores.ToList();
+        }
         public bool Create(Jogador jogador)
         {
             _jogadores.Add(jogador);
